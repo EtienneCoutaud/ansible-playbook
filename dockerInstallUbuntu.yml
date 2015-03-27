@@ -3,6 +3,9 @@
   sudo: True
 
   tasks:
+  - name: install docker-py to use Ansible docker module
+    pip: docker-py
+    
   - name: Download docker
     shell: wget -qO- https://get.docker.com/ | sh
 
