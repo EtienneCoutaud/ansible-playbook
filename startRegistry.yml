@@ -4,7 +4,7 @@
   
   tasks:
   - name: pull docker registry
-     docker:
+    docker:
       name: myRegistry
       image: registry
       state: started
