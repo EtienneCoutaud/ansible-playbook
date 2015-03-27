@@ -4,7 +4,7 @@
 
   tasks:
   - name: install docker-py to use Ansible docker module
-    pip: docker-py
+    pip: name=docker-py
     
   - name: Download docker
     shell: wget -qO- https://get.docker.com/ | sh
