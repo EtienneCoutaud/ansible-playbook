@@ -1,5 +1,6 @@
 ---
 - hosts: all
+  sudo: True
   
   tasks:
   - name: Ping All nodes
