@@ -1,5 +1,5 @@
 ---
-- hosts: loadBalancer, nodes
+- hosts: all
   sudo: True
 
 tasks:
