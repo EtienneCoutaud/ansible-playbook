@@ -4,10 +4,7 @@
   
   tasks:
   - name: pull docker registry
-    docker:
-      name: myRegistry
-      image: registry
-      state: started
-      pull: missing
-      ports:
-      - "5000:5000"
+    shell: sudo docker pull registry
+    
+  - name: run container
+    shell: sudo docker run -p 5000:5000 -t myRegistry registry
