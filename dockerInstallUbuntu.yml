@@ -1,0 +1,10 @@
+---
+- hosts: loadBalancer, nodes
+  sudo: True
+
+tasks:
+  - name: Download docker
+    shell: wget -qO- https://get.docker.com/ | sh
+
+  -name: Test docker connection
+   shell: docker --version
